@@ -1,8 +1,8 @@
 :root {
     --white: hsl(0, 0%, 100%);
-    --Slate-300: hsl(212, 45%, 89%);
-    --Slate-500: hsl(216, 15%, 48%);
-    --Slate-900: hsl(218, 44%, 22%);
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
 }
 
 *,
@@ -11,45 +11,45 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    user-select: none;
 }
 
 body {
-    background-color: var(--Slate-300);
-    font-family: 'Outfit', serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    padding-block: 1.5rem;
+    background-color: var(--slate-300);
+    font-family: 'Outfit', sans-serif;
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 320px;
+    max-width: 320px;
     padding: 1rem;
     background-color: var(--white);
     border-radius: 20px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.image-cotainer img {
+.image-container img {
     width: 100%;
     border-radius: 10px;
 }
 
 .text-container {
-    margin: 1rem 1rem 1.2rem 1rem;
+    margin: 1.25rem 1rem;
     text-align: center;
 }
 
 .text-container h1 {
-    margin-bottom: 1rem;
-    color: var(--Slate-900);
-    font-size: 1.4rem;
+    margin-bottom: .95rem;
+    color: var(--slate-900);
+    font-size: 1.37rem;
     font-weight: 700;
 }
 
 .text-container p {
-    color: var(--Slate-500);
-    font-size: 15px;
+    color: var(--slate-500);
+    font-size: 0.95rem;
     font-weight: 400;
+    line-height: 1.4;
 }
